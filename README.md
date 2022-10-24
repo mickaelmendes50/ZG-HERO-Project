@@ -13,19 +13,19 @@ Após uma reunião com a cliente foi realizado o levantamento dos requisitos par
 Como **requisitos funcionais** foram identificados:
 
 - Realizar login com chave de acesso corporativo único (email) e senha.
-- Buscar os demonstrativos de contas faturadas do Hospital.
-- Buscar os demonstrativos de pagamento dos Convênios.
 - Extrair valor do faturamento e de glosa dos demonstrativos.
 - Detalhar os demonstrativos a nível de Itens.
-- Filtrar contas conforme os identificadores.
-
-Como **requisitos não funcionais** foram identificados:
-
-- Detectar as diferenças em nomenclatura e códigos de produtos entre Hospital e Demonstrativos do Convênio.
 - Identificar itens que não foram conciliados.
 - Identificar contas com glosa que estão dentro do período de contestação.
 - Identificar contas com glosa total.
 - Identificar contas inadimplentes.
+- Filtrar contas conforme os identificadores.
+
+Como **requisitos não funcionais** foram identificados:
+
+- Buscar os demonstrativos de contas faturadas do Hospital.
+- Buscar os demonstrativos de pagamento dos Convênios.
+- Detectar as diferenças em nomenclatura e códigos de produtos entre Hospital e Demonstrativos do Convênio.
 - O produto final será um sistema Web.
 
 ## Principal Requisito
