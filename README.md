@@ -7,7 +7,7 @@ O objetivo do seguinte projeto é criar uma solução para esse problema de comu
 
 ## Análise de Requisitos
 
-O produto consiste em uma aplicação capaz de buscar as informações dos demonstrativos de contas e de pagamentos e extrair os valores de faturamento e de glosa a partir desses demonstrativos.
+O produto consiste em uma aplicação capaz de buscar as informações dos demonstrativos de contas e de pagamentos e extrair os valores de faturamento e de glosa a partir desses demonstrativos. A aplicação deve identificar informações uteis a respeito da glosa e permitir buscas diversas nas conciliações.
 
 Após uma reunião com a cliente foi realizado o levantamento dos requisitos para o projeto.
 Como **requisitos funcionais** foram identificados:
