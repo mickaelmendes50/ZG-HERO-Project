@@ -17,17 +17,13 @@ Como **requisitos funcionais** foram identificados:
 - Buscar os demonstrativos de pagamento dos Convênios.
 - Extrair valor do faturamento e de glosa dos demonstrativos.
 - Detalhar os demonstrativos a nível de Itens.
+- Filtrar contas conforme os identificadores.
+
+Como **requisitos não funcionais** foram identificados:
+
 - Detectar as diferenças em nomenclatura e códigos de produtos entre Hospital e Demonstrativos do Convênio.
 - Identificar itens que não foram conciliados.
 - Identificar contas com glosa que estão dentro do período de contestação.
 - Identificar contas com glosa total.
 - Identificar contas inadimplentes.
-- Filtrar contas conforme os identificadores.
-
-Como **requisitos não funcionais** foram identificados:
-
 - O produto final será um sistema Web.
-- O produto seguirá o modelo de arquitetura MVC.
-- As linguagens utilizadas no fronted serão TypeScript e JavaScript.
-- A linguagem utilizada no backend será Groovy.
-- O framework a ser utilizado no backend será Springboot.
