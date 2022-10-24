@@ -27,3 +27,7 @@ Como **requisitos não funcionais** foram identificados:
 - Identificar contas com glosa total.
 - Identificar contas inadimplentes.
 - O produto final será um sistema Web.
+
+## Principal Requisito
+
+Como principal requisito foi identificado a capacidade de realizar a conciliação ao máximo sem a necessidade de interação com o usuário.
