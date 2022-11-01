@@ -31,3 +31,6 @@ Como **requisitos não funcionais** foram identificados:
 ## Principal Requisito
 
 Como principal requisito foi identificado a capacidade de realizar a conciliação ao máximo sem a necessidade de interação com o usuário.
+
+## Product Backlog e Estórias de Usuários
+- Disponíveis no [Trello](https://trello.com/b/D4GWWIFz/zg-mvp).
