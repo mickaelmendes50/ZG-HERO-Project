@@ -34,3 +34,6 @@ Como principal requisito foi identificado a capacidade de realizar a conciliaç�
 
 ## Product Backlog e Estórias de Usuários
 - Disponíveis no [Trello](https://trello.com/b/D4GWWIFz/zg-mvp).
+
+## Conciliação Manual
+- Disponível no [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1-tJx1329eIsdJwf1WUUwyaVdwRr_ibGvF9p8m8BD0Zs/edit?usp=sharing).
