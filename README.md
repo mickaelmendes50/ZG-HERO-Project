@@ -1,9 +1,14 @@
 # Zero Glosa - MVP
-## Descrição do Processo / Problema
+## Descrição do Problema
 
 [Glosas](https://pt.wikipedia.org/wiki/Glosa_m%C3%A9dica) são faturamentos não recebidos ou recusados nas organizações de saúde, por problemas de comunicação entre clínicas / hospitais e convênios. Em geral, as glosas acontecem quando as informações sobre um atendimento, fornecidas pelo prestador, não batem com o registro no plano de saúde ou estão fora do fora previamente acordado entre as partes.
 
 O objetivo do seguinte projeto é criar uma solução para esse problema de comunicação entre as partes e assim reduzir ao máximo a geração de glosa.
+
+## Planejamento da Solução do Problema
+Primeiramente iremos fazer a modelagem do Banco de Dados PostgreSQL (Banco de Dados Relacional), onde iremos fazer o Diagrama Entidade-Relacionamento (DER). Utilizaremos as remessas, guias e itens para detalhar a glosa de forma individualizada por paciente. Nesse aspecto, vamos implementar o backend com o Framework Grails de modo aplicando os padrões de projeto e técnicas do clean code, além é claro, vamos utilizar o modelo Model-View-Controller (MVC) e integrar com o frontend por meio de APIs. Desse modo, a integração do Banco de Dados com a model do backend, irá tornar a aplicação escalável, faciliando no desevolvimento de um protótipo de baixa, média e alta fidelidade para compreendermos a aplicação de forma geral.
+
+Durenate o processo iremos criar os testes unitários para verificar a estabilidade da aplicação. Construiremos também um Web Crawler para buscar no site da operadora informações referentes às contas dos usuários e o que foi utilizado por parte dos clientes a nível de item, e também implementaremos fórmulas para fazer cáculos mais precisos sobre o valor da glosa.
 
 ## Análise de Requisitos
 
