@@ -10,6 +10,8 @@ Primeiramente iremos fazer a modelagem do Banco de Dados PostgreSQL (Banco de Da
 
 Durenate o processo iremos criar os testes unitários para verificar a estabilidade da aplicação. Construiremos também um Web Crawler para buscar no site da operadora informações referentes às contas dos usuários e o que foi utilizado por parte dos clientes a nível de item, e também implementaremos fórmulas para fazer cáculos mais precisos sobre o valor da glosa.
 
+<img src="https://github.com/mickaelmendes50/ZG-MVP/blob/main/docs/fluxograma.png" alt="drawing" width="900"/>
+
 ## Análise de Requisitos
 
 O produto consiste em uma aplicação capaz de buscar as informações dos demonstrativos de contas e de pagamentos e extrair os valores de faturamento e de glosa a partir desses demonstrativos. A aplicação deve identificar informações uteis a respeito da glosa e permitir buscas diversas nas conciliações.
