@@ -53,3 +53,5 @@ O maior desafio enfrentado pela squad ao escolher esse modelo de Arquitetura foi
 Para uma maior abstração e entendimento do funcionamento da aplicação, foram criados diagramas que determinam os relacionamentos entre os serviços e o funcionamento dos serviços ao receber requisições HTTP.
 
 <img src="https://github.com/mickaelmendes50/ZG-MVP/blob/main/docs/microsservicos.jpg" alt="drawing" width="900"/>
+
+##### Desenvolvido por [Mickael Mesquita](https://github.com/mickaelmendes50), [Hyago Rodriges](https://github.com/HyagoRodrigues) e [Gustavo F](https://github.com/Noel-Engenheiro).
