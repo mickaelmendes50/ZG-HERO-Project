@@ -44,3 +44,12 @@ Como principal requisito foi identificado a capacidade de realizar a conciliaç�
 
 ## Conciliação Manual
 - Disponível no [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1-tJx1329eIsdJwf1WUUwyaVdwRr_ibGvF9p8m8BD0Zs/edit?usp=sharing).
+
+## Arquitetura
+
+Será utilizada a Arquitetura em Microsserviços, que divide a aplicação em serviços unitários e independentes que se comunicam entre si para gerar a funcionalidade principal. Ela foi escolhida devido ao seu modelo organizacional e facilidade de implementação e manutenção.
+
+O maior desafio enfrentado pela squad ao escolher esse modelo de Arquitetura foi definir quais os Microsserviços a ser implementados qual papel eles irão desempenhar e como irão se comunicar.
+Para uma maior abstração e entendimento do funcionamento da aplicação, foram criados diagramas que determinam os relacionamentos entre os serviços e o funcionamento dos serviços ao receber requisições HTTP.
+
+<img src="https://github.com/mickaelmendes50/ZG-MVP/blob/main/docs/microsservicos.jpg" alt="drawing" width="900"/>
