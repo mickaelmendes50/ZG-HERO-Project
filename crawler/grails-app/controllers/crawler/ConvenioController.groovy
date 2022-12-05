@@ -1,8 +1,10 @@
 package crawler
 
+import grails.converters.JSON
+
 class ConvenioController  {
 
-    static namespace = 'convenio'
+    //static namespace = 'convenio'
 
     def index() {
 
@@ -46,6 +48,11 @@ class ConvenioController  {
             file.createNewFile()
         }*/
 
-        respond "testando"
+        render "<h1>Hello world!</h1>"
+    }
+
+    def teste(){
+        println('teste')
+        render(new response(nome:"genivaldo pereira") as JSON)
     }
 }

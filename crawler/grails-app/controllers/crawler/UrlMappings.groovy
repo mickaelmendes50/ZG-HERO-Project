@@ -7,12 +7,10 @@ class UrlMappings {
             constraints {
             }
         }
-
-        '/convenio' {
-            controller = 'convenio'
-            namespace = 'convenio'
-        }
-
+        get "/convenio" (
+            controller:"ConvenioController",
+            action: "teste"
+        )
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
