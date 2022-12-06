@@ -2,13 +2,20 @@ package crawler
 
 import grails.converters.JSON
 
+import groovyx.net.http.*
+import groovyx.net.http.optional.Download
+
+import static groovyx.net.http.HttpBuilder.configure
+
 class ConvenioController  {
 
-    //static namespace = 'convenio'
-
     def index() {
+        render "<h1>Hello world!</h1>"
+    }
 
-        /*
+    def teste(){
+
+
         final def URI = 'https://backend-site-operadora.rj.r.appspot.com'
         final def EMAIL = 'HospitalBomAtendimento@gmail.com.br'
         final def SENHA = '34$33'
@@ -46,13 +53,9 @@ class ConvenioController  {
                 Download.toFile(delegate, newFile)
             }
             file.createNewFile()
-        }*/
+        }
 
-        render "<h1>Hello world!</h1>"
-    }
-
-    def teste(){
         println('teste')
-        render(new response(nome:"genivaldo pereira") as JSON)
+        render(new response(nome:"agora vai pereira") as JSON)
     }
 }
