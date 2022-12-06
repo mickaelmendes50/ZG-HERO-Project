@@ -7,4 +7,20 @@ class Convenio {
 
     static constraints = {
     }
+
+    String getUri() {
+        return this.URI
+    }
+
+    String getEmail() {
+        return EMAIL
+    }
+
+    String getSenha() {
+        return this.SENHA
+    }
+
+    String toString() {
+        return this.EMAIL
+    }
 }

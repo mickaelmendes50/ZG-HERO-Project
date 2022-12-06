@@ -1,9 +1,9 @@
 package crawler
 
-import grails.testing.web.controllers.ControllerUnitTest
+import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class CrawlerControllerSpec extends Specification implements ControllerUnitTest<CrawlerController> {
+class CrawlerServiceSpec extends Specification implements ServiceUnitTest<CrawlerService>{
 
     def setup() {
     }

@@ -1,9 +1,9 @@
 package crawler
 
-import grails.testing.web.controllers.ControllerUnitTest
+import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class CrawlerControllerSpec extends Specification implements ControllerUnitTest<CrawlerController> {
+class HospitalSpec extends Specification implements DomainUnitTest<Hospital> {
 
     def setup() {
     }
