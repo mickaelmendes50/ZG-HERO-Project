@@ -71,6 +71,9 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-support:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.14.0"
+
+    implementation 'io.github.http-builder-ng:http-builder-ng-core:1.0.4'
+    implementation 'org.jsoup:jsoup:1.15.3'
 }
 
 bootRun {
