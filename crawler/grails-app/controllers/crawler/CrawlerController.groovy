@@ -15,12 +15,12 @@ class CrawlerController {
         def parameter = CrawlerService.getParameter(convenio.getUri(), token)
 
         CrawlerService.DownloadConvenioFiles(parameter,token,convenio.getUri())
-        render(new response(status:"Demonstrativos baixados com sucesso") as JSON)
+        render(new response(message:"Demonstrativos baixados com sucesso") as JSON)
     }
 
     def hospital() {
         Hospital hospital = new Hospital()
         CrawlerService.DownloadHospitalFiles(hospital.getURI())
-        render(new response(status: "Faturas baixadas com sucesso") as JSON)
+        render(new response(message: "Faturas baixadas com sucesso") as JSON)
     }
 }
