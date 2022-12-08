@@ -3,7 +3,7 @@ package crawler
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class CrawlerControllerSpec extends Specification implements ControllerUnitTest<CrawlerController> {
+class HospitalControllerSpec extends Specification implements ControllerUnitTest<HospitalController> {
 
     def setup() {
     }

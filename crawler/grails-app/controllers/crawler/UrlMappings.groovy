@@ -7,14 +7,14 @@ class UrlMappings {
             constraints {
             }
         }
-        get "/crawler" (
-            controller:"CrawlerController",
-            action: "convenio"
+        get "/convenio" (
+            controller:"ConvenioController",
+            action: "index"
         )
 
-        get "/crawler" (
-                controller:"CrawlerController",
-                action: "hospital"
+        get "/hospital" (
+                controller:"HospitalController",
+                action: "index"
         )
 
         "/"(view:"/index")
