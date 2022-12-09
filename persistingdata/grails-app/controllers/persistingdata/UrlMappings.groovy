@@ -9,6 +9,11 @@ class UrlMappings {
             }
         }
 
+        get "/fatura" (
+                controller:"FaturaController",
+                action: "index"
+        )
+
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
