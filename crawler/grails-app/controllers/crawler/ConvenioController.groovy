@@ -11,6 +11,11 @@ class ConvenioController {
         def parameter = CrawlerService.getParameter(convenio.getUri(), token)
 
         CrawlerService.DownloadConvenioFiles(parameter,token,convenio.getUri())
-        render(new response(message:"Demonstrativos baixados com sucesso") as JSON)
+
+        def arquivos = []
+        arquivos = CrawlerService.GetAbsolutePath("downloads/demonstrativos")
+        println(arquivos)
+
+        render(arquivos as JSON)
     }
 }

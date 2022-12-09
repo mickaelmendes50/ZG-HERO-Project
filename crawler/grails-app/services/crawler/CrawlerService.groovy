@@ -68,4 +68,13 @@ class CrawlerService {
             file.createNewFile()
         }
     }
+
+    static def GetAbsolutePath(def folder) {
+        File folderAbs = new File(folder)
+        def arquivos = []
+        for (File arquivo : folderAbs.listFiles()) {
+            arquivos << arquivo.getAbsolutePath()
+        }
+        return arquivos
+    }
 }
