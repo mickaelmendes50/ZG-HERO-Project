@@ -54,4 +54,10 @@ Para uma maior abstração e entendimento do funcionamento da aplicação, foram
 
 <img src="https://github.com/mickaelmendes50/ZG-MVP/blob/main/docs/microsservicos.jpg" alt="drawing" width="900"/>
 
+## Banco de dados
+
+Será utilizado o PostgreSQL como banco de dados da aplicação e ele seguirá o seguinte modelo de implementação e relacionamentos:
+
+<img src="https://github.com/mickaelmendes50/ZG-MVP/blob/main/docs/MER.jpeg" alt="drawing" width="900"/>
+
 ##### Desenvolvido por [Mickael Mesquita](https://github.com/mickaelmendes50), [Hyago Rodriges](https://github.com/HyagoRodrigues) e [Gustavo F](https://github.com/Noel-Engenheiro).
