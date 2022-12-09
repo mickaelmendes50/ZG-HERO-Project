@@ -32,14 +32,14 @@ class CrawlerService {
     }
 
     static DownloadConvenioFiles(def parameter, token, URI){
-        new File("downloads").mkdirs();
+        new File("downloads/demonstrativos").mkdirs();
         def listaDemonstrativos = parameter.demonstrativos.url
         for(def demosnstrativos : listaDemonstrativos){
             def arquivoSplit = demosnstrativos.toString().split("/demonstrativoFiles([?!.,])fileName=")
             def arquivo = arquivoSplit[1].toString()
             def endpoint = "/demonstrativoFiles"
 
-            File newFile = new File("downloads/${arquivo}.xlsx");
+            File newFile = new File("downloads/demonstrativos/${arquivo}.xlsx");
             File file = configure {
                 request.uri = URI
                 request.uri.path = endpoint
@@ -54,10 +54,10 @@ class CrawlerService {
     }
 
     static DownloadHospitalFiles(def URI){
-        new File("downloads").mkdirs();
+        new File("downloads/faturas").mkdirs();
         def id = [1,2,3,4]
         for(ids in id){
-            File newFile = new File("downloads/fatura${ids}.csv");
+            File newFile = new File("downloads/faturas/fatura${ids}.csv");
             File file = configure {
                 request.uri = URI
                 request.uri.path = "/fatura"
