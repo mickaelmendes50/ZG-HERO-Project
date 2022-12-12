@@ -8,6 +8,10 @@ import static persistingdata.UtilsService.openDemonstrativoCsv
 class DemonstrativoController {
 
     def index() {
+        render("Para atualizar a base de dados use a ação '/update'")
+    }
+
+    def update() {
         URL apiUrl = new URL("http://localhost:8080/convenio")
         def absolutePath = new JsonSlurper().parse(apiUrl)
 

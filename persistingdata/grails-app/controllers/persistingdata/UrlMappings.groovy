@@ -14,9 +14,19 @@ class UrlMappings {
                 action: "index"
         )
 
+        get "/fatura" (
+                controller:"FaturaController",
+                action: "update"
+        )
+
         get "/demonstrativo" (
                 controller:"DemonstrativoController",
                 action: "index"
+        )
+
+        get "/demonstrativo" (
+                controller:"DemonstrativoController",
+                action: "update"
         )
 
         "/"(view:"/index")

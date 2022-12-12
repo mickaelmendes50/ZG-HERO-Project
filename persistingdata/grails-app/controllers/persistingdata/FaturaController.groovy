@@ -8,6 +8,10 @@ import static persistingdata.UtilsService.openFaturaCsv
 class FaturaController {
 
     def index() {
+        render("Para atualizar a base de dados use a ação '/update'")
+    }
+
+    def update() {
         URL apiUrl = new URL("http://localhost:8080/hospital")
         def absolutePath = new JsonSlurper().parse(apiUrl)
 
