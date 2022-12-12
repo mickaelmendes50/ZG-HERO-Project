@@ -3,7 +3,7 @@ package persistingdata
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class GuiaSpec extends Specification implements DomainUnitTest<Guia> {
+class GuiaHospitalSpec extends Specification implements DomainUnitTest<GuiaHospital> {
 
     def setup() {
     }

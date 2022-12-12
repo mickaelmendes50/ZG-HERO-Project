@@ -15,7 +15,7 @@ class FaturaController {
         for (String path in absolutePath) {
             Fatura fatura = new Fatura()
 
-            List<Guia> guias = openFaturaCsv(path)
+            List<GuiaHospital> guias = openFaturaCsv(path)
             fatura.setGuias(guias)
 
             faturas.add(fatura)

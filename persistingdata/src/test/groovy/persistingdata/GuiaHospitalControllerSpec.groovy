@@ -3,7 +3,7 @@ package persistingdata
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class GuiaControllerSpec extends Specification implements ControllerUnitTest<FaturaController> {
+class GuiaHospitalControllerSpec extends Specification implements ControllerUnitTest<FaturaController> {
 
     def setup() {
     }

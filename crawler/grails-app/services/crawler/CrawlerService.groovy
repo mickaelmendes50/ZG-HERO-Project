@@ -39,7 +39,7 @@ class CrawlerService {
             def arquivo = arquivoSplit[1].toString()
             def endpoint = "/demonstrativoFiles"
 
-            File newFile = new File("downloads/demonstrativos/${arquivo}.xlsx");
+            File newFile = new File("downloads/demonstrativos/${arquivo}.csv");
             File file = configure {
                 request.uri = URI
                 request.uri.path = endpoint

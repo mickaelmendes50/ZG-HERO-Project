@@ -1,13 +1,13 @@
 package persistingdata
 
-class Fatura {
-    List<GuiaHospital> guias
+class Demonstrativo {
+    List<GuiaConvenio> guias
 
-    List<GuiaHospital> getGuias() {
+    List<GuiaConvenio> getGuias() {
         return guias
     }
 
-    void setGuias(List<GuiaHospital> guias) {
+    void setGuias(List<GuiaConvenio> guias) {
         this.guias = guias.collect()
     }
 

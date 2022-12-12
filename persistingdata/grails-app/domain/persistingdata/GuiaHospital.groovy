@@ -2,7 +2,7 @@ package persistingdata
 
 import com.opencsv.bean.CsvBindByName
 
-class Guia {
+class GuiaHospital {
     @CsvBindByName(column = "prestador")
     def prestador
 
