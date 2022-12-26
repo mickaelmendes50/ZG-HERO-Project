@@ -3,7 +3,7 @@ package persistingdata
 import grails.converters.JSON
 import groovy.json.JsonSlurper
 
-import static persistingdata.UtilsService.openFaturaCsv
+import static persistingdata.UtilsService.openCSV
 
 class FaturaController {
 
@@ -19,7 +19,7 @@ class FaturaController {
         for (String path in absolutePath) {
             Fatura fatura = new Fatura()
 
-            List<GuiaHospital> guias = openFaturaCsv(path)
+            List<GuiaHospital> guias = openCSV(path, GuiaHospital.class)
             fatura.setGuias(guias)
 
             faturas.add(fatura)

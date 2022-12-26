@@ -1,24 +1,16 @@
 package persistingdata
 
-import com.opencsv.bean.CsvToBeanBuilder;
+import com.opencsv.bean.CsvToBeanBuilder
 
 class UtilsService {
 
-    static List<GuiaHospital> openFaturaCsv(String path) throws IOException {
-        List<GuiaHospital> guias = new CsvToBeanBuilder(new FileReader(path))
-                .withType(GuiaHospital.class)
+    static def openCSV(String path, Class objeto) throws IOException {
+        Object classe = objeto.newInstance()
+        def  valor = new CsvToBeanBuilder(new FileReader(path))
+                .withType(classe.class)
                 .build()
                 .parse();
 
-        return guias
-    }
-
-    static List<GuiaConvenio> openDemonstrativoCsv(String path) throws IOException {
-        List<GuiaConvenio> guias = new CsvToBeanBuilder(new FileReader(path))
-                .withType(GuiaConvenio.class)
-                .build()
-                .parse();
-
-        return guias
+        return valor
     }
 }

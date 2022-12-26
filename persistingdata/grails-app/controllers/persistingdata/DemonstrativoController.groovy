@@ -3,7 +3,7 @@ package persistingdata
 import grails.converters.JSON
 import groovy.json.JsonSlurper
 
-import static persistingdata.UtilsService.openDemonstrativoCsv
+import static persistingdata.UtilsService.openCSV
 
 class DemonstrativoController {
 
@@ -19,7 +19,7 @@ class DemonstrativoController {
         for (String path in absolutePath) {
             Demonstrativo demonstrativo = new Demonstrativo()
 
-            List<GuiaConvenio> guias = openDemonstrativoCsv(path)
+            List<GuiaConvenio> guias = openCSV(path, GuiaConvenio.class)
             demonstrativo.setGuias(guias)
 
             demonstrativos.add(demonstrativo)
