@@ -3,18 +3,16 @@ package persistingdata
 
 import grails.gorm.transactions.Transactional
 
+import static persistingdata.UtilsService.filesPath
 import static persistingdata.UtilsService.openCSV
 
 @Transactional
 class ItemHospitalService {
     def saveDataBase() {
-        File folder = new File("downloads/hospital/")
-        def arq = []
-        for (File arquivo : folder.listFiles()) {
-            arq << arquivo.getAbsolutePath()
-        }
-        for (file in arq) {
-            List<ItemHospital> itens = openCSV(file, ItemHospital)
+        def paths = filesPath("/hospital")
+
+        for(path in paths) {
+            List<ItemHospital> itens = openCSV(path, ItemHospital)
             for (item in itens) {
                 item.save()
             }

@@ -3,22 +3,19 @@ package persistingdata
 
 import grails.gorm.transactions.Transactional
 
-import static persistingdata.UtilsService.openCSV
+import static persistingdata.UtilsService.*
 
 @Transactional
 class BeneficiarioService {
 
    def saveDataBase() {
-    File folder = new File("downloads/hospital/")
-    def arq = []
-    for (File arquivo : folder.listFiles()) {
-        arq << arquivo.getAbsolutePath()
-    }
-    for(file in arq){
-        List<Beneficiario> beneficiarios = openCSV(file, Beneficiario)
-        for( Beneficiario beneficiario in beneficiarios){
-            beneficiario.save()
+        def paths = filesPath("/hospital")
+
+        for(path in paths){
+            List<Beneficiario> beneficiarios = openCSV(path, Beneficiario)
+            for(beneficiario in beneficiarios){
+                beneficiario.save()
+            }
         }
-    }
    }
 }
