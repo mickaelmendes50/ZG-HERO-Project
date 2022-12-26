@@ -1,17 +1,20 @@
 package persistingdata
 
 import com.google.gson.Gson
+import grails.converters.JSON
 
 class BeneficiarioController {
-    def beneficiarioService
+    def service = new BeneficiarioService()
+    def gson = new Gson();
+
     def index() {
         def beneficiarios = Beneficiario.list()
-        save()
-        Gson gson = new Gson();
         def json = gson.toJson(beneficiarios)
         render(json)
     }
-    def save(){
-        beneficiarioService.saveDataBase()
+
+    def update() {
+        service.saveDataBase()
+        render(new response(message: "updated database successfuly") as JSON)
     }
 }

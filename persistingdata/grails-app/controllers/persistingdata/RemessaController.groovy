@@ -1,18 +1,20 @@
 package persistingdata
 
 import com.google.gson.Gson
+import grails.converters.JSON
 
 class RemessaController {
-    def remessaService
+    def service = new RemessaService()
+    def gson = new Gson();
+
     def index() {
         def remessas = Remessa.list()
-        save()
-        Gson gson = new Gson();
         def json = gson.toJson(remessas)
         render(json)
     }
 
-    def save(){
-        remessaService.saveDataBase()
+    def update() {
+        service.saveDataBase()
+        render(new response(message: "updated database successfuly") as JSON)
     }
 }

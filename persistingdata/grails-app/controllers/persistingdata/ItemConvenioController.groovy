@@ -1,20 +1,20 @@
 package persistingdata
 
 import com.google.gson.Gson
+import grails.converters.JSON
 
 class ItemConvenioController {
+    def service = new ItemConvenioService()
+    def gson = new Gson();
 
-    def itemConvenioService
     def index() {
         def itens = ItemConvenio.list()
-        save()
-        Gson gson = new Gson();
         def json = gson.toJson(itens)
         render(json)
     }
 
-    def save(){
-        itemConvenioService.saveDataBase()
+    def update() {
+        service.saveDataBase()
+        render(new response(message: "updated database successfuly") as JSON)
     }
-
 }

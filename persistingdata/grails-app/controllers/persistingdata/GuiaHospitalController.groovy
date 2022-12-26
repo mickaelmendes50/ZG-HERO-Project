@@ -1,19 +1,20 @@
 package persistingdata
 
 import com.google.gson.Gson
+import grails.converters.JSON
 
 class GuiaHospitalController {
-    def guiaHospitalService
+    def service = new GuiaHospitalService()
+    def gson = new Gson();
+
     def index() {
         def guiasHospital = GuiaHospital.list()
-        save()
-        Gson gson = new Gson();
         def json = gson.toJson(guiasHospital)
         render(json)
-
     }
 
-    def save(){
-        guiaHospitalService.saveDataBase()
+    def update() {
+        service.saveDataBase()
+        render(new response(message: "updated database successfuly") as JSON)
     }
 }
