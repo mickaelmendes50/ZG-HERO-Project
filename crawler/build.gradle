@@ -74,6 +74,9 @@ dependencies {
 
     implementation 'io.github.http-builder-ng:http-builder-ng-core:1.0.4'
     implementation 'org.jsoup:jsoup:1.15.3'
+
+    // https://mvnrepository.com/artifact/org.spockframework/spock-core
+    testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
 }
 
 bootRun {
