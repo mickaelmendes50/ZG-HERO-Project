@@ -18,6 +18,7 @@ class ItemHospital {
     ItemConvenio itemConvenio
     GuiaHospital guiaHospital
 
+
     static constraints = {
         itemConvenio nullable: true
         guiaHospital nullable: true

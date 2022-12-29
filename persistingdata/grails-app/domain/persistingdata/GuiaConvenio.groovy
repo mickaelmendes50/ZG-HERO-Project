@@ -20,7 +20,7 @@ class GuiaConvenio {
     String numeroProtocolo
 
     GuiaHospital guiaHospital
-    ItemConvenio itemConvenio
+    static hasMany = [itemConvenio :ItemConvenio]
 
     static constraints = {
         guiaHospital nullable: true

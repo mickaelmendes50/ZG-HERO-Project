@@ -2,7 +2,7 @@ package persistingdata
 
 import com.opencsv.bean.CsvBindByName
 
-class GuiaHospital {
+class GuiaHospital implements Serializable {
 
     @CsvBindByName(column = "prestador")
     String prestador
@@ -17,8 +17,7 @@ class GuiaHospital {
     String senha
 
     GuiaConvenio guiaConvenio
-    ItemHospital itemHospital
-
+    static hasMany = [itemHospital: ItemHospital]
     static constraints = {
         guiaConvenio nullable: true
         itemHospital nullable: true
