@@ -15,7 +15,8 @@ class ItemHospital {
     @CsvBindByName(column = "valor_cobrado")
     String valorCobrado
 
-    static belongsTo = [itemConvenio: ItemConvenio, guiaHospital: GuiaHospital]
+    ItemConvenio itemConvenio
+    GuiaHospital guiaHospital
 
     static constraints = {
         itemConvenio nullable: true

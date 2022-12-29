@@ -8,21 +8,23 @@ class GuiaConvenio {
     String convenio
 
     @CsvBindByName(column = "numero_guia")
-    String  numeroGuia
+    String numeroGuia
 
     @CsvBindByName(column = "numero_guia_prestador")
-    String  numGuiaHospital
+    String numGuiaHospital
 
     @CsvBindByName(column = "senha")
     String senha
 
     @CsvBindByName(column = "numero_protocolo")
-    String  numeroProtocolo
+    String numeroProtocolo
 
-    //static hasOne = [guiaHospital: GuiaHospital, itemConvenio: ItemConvenio]
+    GuiaHospital guiaHospital
+    ItemConvenio itemConvenio
 
     static constraints = {
-
+        guiaHospital nullable: true
+        itemConvenio nullable: true
     }
 
     static mapping = {
@@ -31,6 +33,7 @@ class GuiaConvenio {
         numGuiaHospital column: 'guia_hospital'
         senha column: 'senha'
         numeroProtocolo column: 'protocolo'
+        id column: 'id_convenio'
     }
 
     @Override

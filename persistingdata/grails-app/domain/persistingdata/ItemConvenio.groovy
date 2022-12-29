@@ -19,11 +19,19 @@ class ItemConvenio {
     @CsvBindByName(column = "valor_glosa")
     String valorGlosa
 
-    static belongsTo = [guiaConvenio: GuiaConvenio]
-    static hasOne = [itemHospital: ItemHospital, motivoGlosa: MotivoGlosa]
+    @CsvBindByName(column = "codigo_motivo")
+    String codigoMotivo
+
+    @CsvBindByName(column = "descricao_motivo")
+    String descricaoMotivo
+
+    GuiaConvenio guiaConvenio
+    ItemHospital itemHospital
+
 
     static constraints = {
-
+        guiaConvenio nullable: true
+        itemHospital nullable: true
     }
 
     static mapping = {
@@ -32,7 +40,8 @@ class ItemConvenio {
         valorApresentado column: 'valor_apresentado'
         valorPago column: 'valor_pago'
         valorGlosa column: 'valor_glosa'
-
+        codigoMotivo column: 'codigo_motivo'
+        descricaoMotivo colum: 'descricao_motivo'
     }
 
     @Override
@@ -41,7 +50,8 @@ class ItemConvenio {
                 "Descricao: " + descricao + "\n" +
                 "Valor Apresentado: " + valorApresentado + "\n" +
                 "Valor Pago: " + valorPago + "\n" +
-                "Valor Glosa: " + valorGlosa + "\n"
+                "Valor Glosa: " + valorGlosa + "\n" +
+                "Codigo do Motivo" + codigoMotivo + "\n" +
+                "Descrição" + descricaoMotivo + "\n"
     }
-
 }

@@ -16,19 +16,12 @@ class GuiaHospital {
     @CsvBindByName(column = "senha")
     String senha
 
-
-
-    //static belongsTo = [guiaConvenio : GuiaConvenio]
-    //static hasOne = [itemHospital : ItemHospital]
+    GuiaConvenio guiaConvenio
+    ItemHospital itemHospital
 
     static constraints = {
-        //guiaConvenio nullable: true
-        //itemHospital nullable: true
-
-        prestador column: 'prestador'
-        dataAtendimento column: 'data_atendimento'
-        numeroGuia column: 'numero_guia'
-        senha column: 'senha'
+        guiaConvenio nullable: true
+        itemHospital nullable: true
     }
 
     static mapping = {
@@ -45,5 +38,4 @@ class GuiaHospital {
                 "Numero Guia: " + numeroGuia + "\n" +
                 "Senha: " + senha + "\n"
     }
-
 }
