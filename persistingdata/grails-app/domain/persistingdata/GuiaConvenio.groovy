@@ -24,16 +24,11 @@ class GuiaConvenio {
 
     static constraints = {
         guiaHospital nullable: true
+        guiaHospital updateable: true
         itemConvenio nullable: true
     }
 
     static mapping = {
-        convenio column: 'convenio'
-        numeroGuia column: 'numero_guia'
-        numGuiaHospital column: 'guia_hospital'
-        senha column: 'senha'
-        numeroProtocolo column: 'protocolo'
-        id column: 'id_convenio'
     }
 
     @Override

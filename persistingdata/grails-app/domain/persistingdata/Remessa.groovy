@@ -16,6 +16,8 @@ class Remessa {
     static hasMany = [guiaHospital: GuiaHospital, guiaConvenio: GuiaConvenio]
 
     static constraints = {
+        guiaHospital nullable: true
+        guiaConvenio nullable: true
     }
 
     def getRemessa() {

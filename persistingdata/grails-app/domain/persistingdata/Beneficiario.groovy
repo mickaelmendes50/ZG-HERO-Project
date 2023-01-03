@@ -12,8 +12,8 @@ class Beneficiario {
     static hasMany = [guiaHospital: GuiaHospital, guiaConvenio: GuiaConvenio]
 
     static constraints = {
-        nome nullable: true
-        matricula nullable: true
+        guiaHospital nullable: true
+        guiaConvenio nullable: true
     }
      static mapping = {
          nome column: 'nome'
